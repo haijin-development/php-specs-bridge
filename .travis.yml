@@ -1,0 +1,7 @@
+language: php
+php:
+  - '7.2'
+before_script:
+  - composer self-update
+  - cd tests/symfony4/tests && composer install
+script: cd tests/symfony4/tests && composer specs

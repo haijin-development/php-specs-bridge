@@ -1,0 +1,30 @@
+{
+    "name": "haijin/specs-bridge",
+    "description": "Bridge to use haijin/specs with PHP frameworks.",
+    "keywords": ["RSpec", "testing", "assertions", "expectations", "specs", "DSL", "PHPUnit", "Symfony"],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/haijin-development/php-specs-bridge",
+    "authors": [
+        {
+            "name": "Haijin Development",
+            "email": "haijin.development@gmail.com",
+            "homepage": "https://github.com/haijin-development",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Haijin\\Bridge\\": ["src/"]
+        }
+    },
+    "require-dev": {
+        "haijin/specs": "^2.0"
+    },
+    "scripts": {
+        "specs": "php ./vendor/bin/specs"
+    }
+}
